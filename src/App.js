@@ -1,5 +1,8 @@
 import React from 'react';
-import {petition} from './services/petition';
+import { petition } from './services/petition';
+import Home from './components/Home';
+import Details from './components/Details';
+import { Switch, Route } from 'react-router-dom';
 import './App.css';
 
 class App extends React.Component {
@@ -24,26 +27,39 @@ class App extends React.Component {
         population: data.Brastlewark
       })
     })
-
   }
 
   render() {
     const {population} = this.state;
-    console.log('**', population);
+    
+    return(
+      <Switch>
 
-    return (
-      <div className="app">
-      <ul className="population-list">
-        {population.map(item => {
-          return(
-            <li className="item-list" key={item.id}>
-              <h2 className="name">{item.name}</h2>
-            </li>
-          );
-        })}
-      </ul>
-      </div>
+        <Route 
+          exact path = "/"
+          render={() => (
+            <Home 
+              population = {population}
+            />
+          )}
+        />
+
+        <Route 
+          path = "/person/:id"
+          render = {(routerProps) => (
+            <Details 
+              match = {routerProps.match}
+              population = {population}
+              handleResetFilter = {this.handleResetFilter}
+            />
+          )}
+        />
+
+    </Switch>
     );
+
+
+
 
   }
 }
