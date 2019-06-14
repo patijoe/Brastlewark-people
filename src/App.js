@@ -3,7 +3,6 @@ import { petition } from './services/petition';
 import Home from './components/Home';
 import Details from './components/Details';
 import { Switch, Route } from 'react-router-dom';
-import './App.css';
 
 class App extends React.Component {
 
@@ -11,8 +10,11 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      population: []
+      population: [],
+      filterName:''
     }
+
+    this.handleFilterName=this.handleFilterName.bind(this);
   }
 
   componentDidMount() {
@@ -29,8 +31,15 @@ class App extends React.Component {
     })
   }
 
+  handleFilterName(event) {
+    const nameValue = event.currentTarget.value;
+    this.setState({
+      filterName: nameValue
+    })
+  }
+
   render() {
-    const {population} = this.state;
+    const {population, filterName} = this.state;
     
     return(
       <Switch>
@@ -39,7 +48,9 @@ class App extends React.Component {
           exact path = "/"
           render={() => (
             <Home 
-              population = {population}
+              population={population}
+              filterName={filterName}
+              handleFilterName={this.handleFilterName}
             />
           )}
         />
@@ -48,9 +59,9 @@ class App extends React.Component {
           path = "/person/:id"
           render = {(routerProps) => (
             <Details 
-              match = {routerProps.match}
-              population = {population}
-              handleResetFilter = {this.handleResetFilter}
+              match={routerProps.match}
+              population={population}
+              handleResetFilter={this.handleResetFilter}
             />
           )}
         />

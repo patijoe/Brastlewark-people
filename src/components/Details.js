@@ -13,7 +13,8 @@ class Details extends React.Component {
       <div>
         {newPerson !== undefined 
         ? <div className="detail__container">
-          {newPerson.name}
+          <h2 className="newPerson__name">{newPerson.name}</h2>
+          <div className="newPerson__img" style={{backgroundImage: `url(${newPerson.thumbnail})`}}></div>
         </div>
         : 'no hay info'}
       </div>
