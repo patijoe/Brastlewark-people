@@ -15,6 +15,7 @@ class App extends React.Component {
     }
 
     this.handleFilterName=this.handleFilterName.bind(this);
+    this.handleResetFilter=this.handleResetFilter.bind(this);
   }
 
   componentDidMount() {
@@ -35,6 +36,12 @@ class App extends React.Component {
     const nameValue = event.currentTarget.value;
     this.setState({
       filterName: nameValue
+    })
+  }
+
+  handleResetFilter(){
+    this.setState({
+      filterName:''
     })
   }
 

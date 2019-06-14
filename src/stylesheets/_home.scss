@@ -1,6 +1,28 @@
+.population__list{
+ list-style: none;
+ display: flex;
+ flex-wrap: wrap;
+}
+
+.person__item{
+  height: 300px;
+  width: 220px;
+  margin: 10px;
+  border: 1px solid blue;
+}
+
 .person__img{
-  height: 100px;
-  width: 100px;
+  height: 220px;
+  width: 220px;
   background-size: cover;
   background-position: center;
+}
+
+.person__name{
+  font-size: 18px;
+  text-align: center;
+}
+
+.home__link{
+  text-decoration: none;
 }
