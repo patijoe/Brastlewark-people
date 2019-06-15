@@ -6,7 +6,7 @@ class Filter extends React.Component{
 
     return(
       <div className="filterName">
-        <label htmlFor="filterName" className="filter__label"> Who are you lookin for?</label>
+        <label htmlFor="filterName" className="filter__label"> Who are you looking for?</label>
         <input type="text" id="filterName" onChange={handleFilterName} />
       </div>
 
