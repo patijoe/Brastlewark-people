@@ -1,17 +1,33 @@
 .filterName{
-  height: 150px;
-  text-align: center;
-  line-height: 150px;
+  height: auto;
   font-family: 'Roboto', sans-serif;
   color: gray;
   font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media all and (min-width: 768px) {
+    flex-direction: row;
+    line-height: 150px;
+  }
 }
 
 .filter__label{
-  margin-right: 20px;
+  margin: 40px 0 20px;
+
+  @media all and (min-width: 768px) {
+    margin-right: 20px;
+  }
 }
 
 #filterName{
+  margin-bottom: 25px;
   height: 30px;
-  width: 300px;
+  width: 250px;
+  
+  @media all and (min-width: 768px) {
+    margin: 0 0 0 20px;;
+  }
 }

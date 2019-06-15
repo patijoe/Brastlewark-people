@@ -47,7 +47,7 @@ class Details extends React.Component {
               </div>
 
               <h2 className="newPerson__details">Friendships</h2>
-              <h3 className="char">
+              <h3 className="newPerson__friends char">
                 {newPerson.friends.join(', ')}
               </h3>
             </div>
