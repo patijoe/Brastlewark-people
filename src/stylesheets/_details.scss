@@ -1,6 +1,84 @@
+.details__page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+  height: 100vh;
+  width: 100vw;
+}
+
+.detail__container{
+  display: flex;
+  height: 400px;
+  width: auto;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.newPerson__info{
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+  background-color: aliceblue;
+}
+
+.newPerson__name{
+  font-family: 'Roboto', sans-serif;
+  color: gray;
+  text-align: center;
+}
+
+.newPerson__block1{
+  display: flex;
+}
+
+.newPerson__details{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: #828282;
+}
+
+.newPerson__char{
+  width: auto;
+  padding-right: 40px;
+}
+
+.prof__list{
+  list-style: none;
+  padding: 0;
+}
+
+.prof__item{
+  line-height: 25px;
+}
+
+.char{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: grey;
+}
+
+.newPerson__prof{
+  padding-right: 40px;
+}
+
 .newPerson__img{
-  height: 100px;
-  width: 100px;
+  height: 400px;
+  width: 280px;
   background-size: cover;
   background-position: center;
+}
+
+.return__link{
+  text-decoration: none;
+  border: 1px solid grey;
+  margin-top: 70px;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  line-height: 80px;
+  text-align: center;
+  background-color: #828282;
+  color: aliceblue;
 }

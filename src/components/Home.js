@@ -13,6 +13,8 @@ class Home extends React.Component {
           filterName={filterName}
           handleFilterName={handleFilterName} />
 
+        <hr className="row" />
+
         <ul className="population__list">
           {population
           .filter(item => item.name.toUpperCase().includes(filterName.toUpperCase()))
