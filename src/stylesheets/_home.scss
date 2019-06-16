@@ -12,6 +12,12 @@
   border: 1px solid grey;
   border-radius: 5px;
   background-color: aliceblue;
+
+  &:hover {
+    box-shadow: (-2px 3px 10px 0 rgba(0, 0, 0, 0.1));
+    filter: drop-shadow(5px 5px 10px rgb(156, 154, 154));
+    transition: 0.5s;
+  }
 }
 
 .person__img{

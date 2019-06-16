@@ -107,4 +107,9 @@
   text-align: center;
   background-color: #828282;
   color: aliceblue;
+  &:hover {
+    box-shadow: (-2px 3px 10px 0 rgba(0, 0, 0, 0.1));
+    filter: drop-shadow(2px 2px 2px rgb(156, 154, 154));
+    transition: 0.3s;
+  }
 }
