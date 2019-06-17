@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 
 class Details extends React.Component {
 
-  // const {handleResetFilter} =this.props;
-
   componentWillUnmount() {
     this.props.handleResetFilter();
   }
@@ -14,7 +12,6 @@ class Details extends React.Component {
     const id = this.props.match.params.id;
 
     const newPerson = population.find(item => parseInt(id) === item.id);
-    console.log('^*^', newPerson);
 
     return (
       <div className="details__page">
