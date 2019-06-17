@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home component matches the snapshot 1`] = `
+<div
+  className="app"
+>
+  <div
+    className="filterName"
+  >
+    <label
+      className="filter__label"
+      htmlFor="filterName"
+    >
+       Who are you looking for?
+    </label>
+    <input
+      id="filterName"
+      type="text"
+    />
+  </div>
+  <hr
+    className="row"
+  />
+  <ul
+    className="population__list"
+  >
+    <li
+      className="person__item"
+    >
+      <a
+        className="home__link"
+        href="/person/9"
+        onClick={[Function]}
+      >
+        <div
+          className="person__img"
+          style={
+            Object {
+              "backgroundImage": "url(https://estaticos.elperiodico.com/resources/jpg/1/3/1554908865931.jpg)",
+            }
+          }
+        />
+        <h2
+          className="person__name"
+        >
+          patri
+        </h2>
+      </a>
+    </li>
+    <li
+      className="person__item"
+    >
+      <a
+        className="home__link"
+        href="/person/8"
+        onClick={[Function]}
+      >
+        <div
+          className="person__img"
+          style={
+            Object {
+              "backgroundImage": "url(https://estaticos.elperiodico.com/resources/jpg/1/3/1554908865931.jpg)",
+            }
+          }
+        />
+        <h2
+          className="person__name"
+        >
+          julia
+        </h2>
+      </a>
+    </li>
+  </ul>
+</div>
+`;

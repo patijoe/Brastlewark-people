@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Details component matches the snapshot in Details component 1`] = `
+<div
+  className="details__page"
+>
+  no hay info
+  <a
+    className="return__link"
+    href="/"
+    onClick={[Function]}
+  >
+    RETURN
+  </a>
+</div>
+`;
