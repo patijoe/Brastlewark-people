@@ -41,3 +41,5 @@ Builds the app for production to the `build` folder.
 
 * When the details page returns to home page, the filter es clear <br>
 
+* The project is publicated in gitHub pages
+
