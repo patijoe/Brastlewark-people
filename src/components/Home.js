@@ -1,6 +1,7 @@
 import React from 'react';
 import Filter from './Filter';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 class Home extends React.Component {
   render() {
@@ -33,5 +34,11 @@ class Home extends React.Component {
     );
   }
 }
+
+Home.propTypes = {
+  population: PropTypes.array,
+  handleFilterName: PropTypes.func,
+  filterName: PropTypes.string
+};
 
 export default Home;
