@@ -12,3 +12,7 @@ it('renders without crashing', () => {
   , div);
   ReactDOM.unmountComponentAtNode(div);
 });
+
+test ('fetchPetition', () => {
+  expect(data.Brastlewark[0].name).toBe("Tobus Quickwhistle");
+})
