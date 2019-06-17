@@ -25,7 +25,6 @@ class App extends React.Component {
   fetchPetition(){
     petition()
     .then(data => {
-      console.log('*', data.Brastlewark[0].name);
       this.setState({
         population: data.Brastlewark
       })

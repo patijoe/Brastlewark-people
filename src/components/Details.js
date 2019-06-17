@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 
 class Details extends React.Component {
 
-  // const {handleResetFilter} =this.props;
-
   componentWillUnmount() {
     this.props.handleResetFilter();
   }
@@ -14,7 +12,6 @@ class Details extends React.Component {
     const id = this.props.match.params.id;
 
     const newPerson = population.find(item => parseInt(id) === item.id);
-    console.log('^*^', newPerson);
 
     return (
       <div className="details__page">
@@ -39,8 +36,8 @@ class Details extends React.Component {
                 <div className="newPerson__prof">
                   <h2 className="newPerson__details">Professions</h2>
                   <ul className="prof__list">
-                    {newPerson.professions.map(item => {
-                      return (<li className="prof__item char">{item}</li>);
+                    {newPerson.professions.map((item, index) => {
+                      return (<li className="prof__item char" key={index}>{item}</li>);
                     })}
                   </ul>
                 </div>

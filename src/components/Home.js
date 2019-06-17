@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 class Home extends React.Component {
   render() {
     const { population, handleFilterName, filterName } = this.props;
-    console.log('**', population);
 
     return (
       <div className="app">
