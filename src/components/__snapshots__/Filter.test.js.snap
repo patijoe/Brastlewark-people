@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Filter component matches the snapshot in filter component 1`] = `
+<div
+  className="filterName"
+>
+  <label
+    className="filter__label"
+    htmlFor="filterName"
+  >
+     Who are you looking for?
+  </label>
+  <input
+    id="filterName"
+    type="text"
+  />
+</div>
+`;
