@@ -31,5 +31,4 @@ describe('Home component', () => {
     );
     expect(component.toJSON()).toMatchSnapshot();
   });
-
 });
