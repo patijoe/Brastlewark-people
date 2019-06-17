@@ -33,13 +33,13 @@ Builds the app for production to the `build` folder.
   - Details: personal info card <br>
   - Filter: it is possible to filtrate for name <br>
 
-* The imges are been used like a backgroung img to prevent possible diferents users images sizes <br>
+* The images are been used like a backgroung img to prevent possible diferents users images sizes <br>
 
 * To prevent API asynchrony, in Details component exists a ternary condicional <br>
 
 * It is possible to filter in upper case and lower case <br>
 
-* When the details page returns to home page, the filter es clear <br>
+* When the details page returns to home page, the filter is clear <br>
 
 * The project is publicated in gitHub pages
 
